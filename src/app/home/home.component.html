@@ -5,6 +5,12 @@
   </form>
 </section>
 <section class="results">
+  <!--
+    + code between quotes is called "Angular template syntax"
+    + creates a housingLocation for each entry in the list parameter (defined in the component .ts file)
+    + then pass it on as a a value (between quotes) to the target parameter (name between square brackets [])
+      of the housing location component
+  -->
   <app-housing-location
         *ngFor="let housingLocation of housingLocationList"
         [housingLocation]="housingLocation"
